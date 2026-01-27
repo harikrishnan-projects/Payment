@@ -257,9 +257,10 @@ nav ul li a{
 
 .trusted-text{
   color:#fff;
-  font-size:22px;
+  font-size:32px;
   margin-bottom:100px;
-  
+  text-decoration: underline;
+  text-decoration-color: rgb(255, 60, 172);
 }
 
 .partners{
@@ -281,6 +282,7 @@ nav ul li a{
 .partners img:hover{
   opacity:1;
   filter:grayscale(0%);
+  scale: 1.2;
 }
 
 /* TRUSTED MOBILE */
@@ -293,7 +295,7 @@ nav ul li a{
   }
 
   .trusted-text{
-    font-size:18px;
+    font-size:25px;
   }
 
   .partners{
@@ -330,9 +332,10 @@ nav ul li a{
 }
 
 .features-title{
-  color:#fff;
+  color:rgb(255, 60, 172);
   font-size:36px;
   margin-bottom:60px;
+  text-decoration: white underline;
 }
 
 .features-grid{
@@ -353,6 +356,10 @@ nav ul li a{
   transform:translateY(-6px);
   box-shadow:0px 0px 10px 5px rgb(255, 60, 172);
   border: 2px solid rgb(255, 60, 172);
+}
+
+.feature-card:hover span{
+  scale: 1.6;
 }
 
 .feature-card span{
@@ -417,6 +424,7 @@ nav ul li a{
   font-size:36px;
   margin-bottom:15px;
   text-align:center;
+  color: rgb(255, 60, 172);
 }
 
 .how-subtitle{
@@ -539,6 +547,7 @@ nav ul li a{
 .payment-info h2{
   font-size: 36px;
   margin-bottom: 20px;
+  color: rgb(255, 60, 172);
 }
 
 .payment-info p{
@@ -557,7 +566,7 @@ nav ul li a{
 .payment-points li{
   margin-bottom: 12px;
   font-size: 15px;
-  color: #ddd;
+  color: rgb(255, 60, 172);
 }
 
 /* =========================
@@ -660,6 +669,7 @@ nav ul li a{
 .security-header h2{
   font-size:36px;
   margin-bottom:15px;
+  color: rgb(255, 60, 172);
 }
 
 .security-header p{
@@ -703,7 +713,16 @@ nav ul li a{
 .security-card:hover{
   transform: translateY(-8px);
   box-shadow:0 20px 40px rgba(0,0,0,0.4);
+  border-bottom: 10px solid rgb(255, 60, 172);
 }
+
+
+.security-card:hover h3{
+  scale: 1.2;
+  color:rgb(255, 60, 172) ;
+}
+
+
 @media (max-width:768px){
 
   .security-section{
@@ -763,6 +782,7 @@ nav ul li a{
 .pricing-header h2{
   font-size:38px;
   margin-bottom:15px;
+  text-decoration: rgb(255, 60, 172) underline;
 }
 
 .pricing-header p{
@@ -935,7 +955,7 @@ nav ul li a{
 
 /* COLUMNS */
 .footer-col h4{
-  color:#fff;
+  color:rgb(255, 60, 172);
   font-size:16px;
   margin-bottom:20px;
 }
