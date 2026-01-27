@@ -639,10 +639,256 @@ nav ul li a{
 
 
 
+/* ============================
+   SECURITY & COMPLIANCE
+============================ */
+.security-section{
+  padding:100px 60px;
+  background:#0f0f0f;
+  color:#ffffff;
+  text-align:center;
+
+  flex-direction: column;
+}
+
+/* HEADER */
+.security-header{
+  max-width:700px;
+  margin:0 auto 70px;
+}
+
+.security-header h2{
+  font-size:36px;
+  margin-bottom:15px;
+}
+
+.security-header p{
+  font-size:16px;
+  color:#cccccc;
+  line-height:1.6;
+}
+
+/* CARD GRID */
+.security-cards{
+  display:grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap:30px;
+}
+
+/* CARD */
+.security-card{
+  background:#1b1b1b;
+  padding:40px 25px;
+  border-radius:14px;
+  transition:0.3s ease;
+}
+
+.security-card .icon{
+  font-size:42px;
+  margin-bottom:20px;
+}
+
+.security-card h3{
+  font-size:20px;
+  margin-bottom:12px;
+}
+
+.security-card p{
+  font-size:14px;
+  color:#cccccc;
+  line-height:1.6;
+}
+
+/* HOVER EFFECT */
+.security-card:hover{
+  transform: translateY(-8px);
+  box-shadow:0 20px 40px rgba(0,0,0,0.4);
+}
+@media (max-width:768px){
+
+  .security-section{
+    padding:80px 20px;
+  }
+
+  .security-header h2{
+    font-size:28px;
+  }
+
+  .security-header p{
+    font-size:15px;
+  }
+
+  .security-cards{
+    grid-template-columns:1fr;
+    gap:20px;
+  }
+
+  .security-card{
+    padding:35px 20px;
+  }
+
+  .security-card .icon{
+    font-size:36px;
+  }
+}
 
 
 
 
+
+
+
+
+
+
+
+/* =========================
+   PRICING SECTION
+========================= */
+.pricing-section{
+  padding:100px 60px;
+  background:#0f0f0f;
+  color:#ffffff;
+  text-align:center;
+
+  flex-direction: column;
+}
+
+/* HEADER */
+.pricing-header{
+  max-width:750px;
+  margin:0 auto 80px;
+}
+
+.pricing-header h2{
+  font-size:38px;
+  margin-bottom:15px;
+}
+
+.pricing-header p{
+  font-size:16px;
+  color:#cccccc;
+  line-height:1.6;
+}
+
+/* CARD WRAPPER */
+.pricing-cards{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap:30px;
+}
+
+/* CARD */
+.pricing-card{
+  background:#1b1b1b;
+  padding:45px 30px;
+  border-radius:18px;
+  position:relative;
+  transition:0.3s ease;
+}
+
+.pricing-card h3{
+  font-size:22px;
+  margin-bottom:15px;
+}
+
+.price{
+  font-size:32px;
+  font-weight:700;
+  margin-bottom:25px;
+}
+
+/* FEATURES */
+.pricing-features{
+  list-style:none;
+  padding:0;
+  margin-bottom:35px;
+}
+
+.pricing-features li{
+  font-size:15px;
+  color:#cccccc;
+  padding:10px 0;
+  border-bottom:1px solid #2a2a2a;
+}
+
+/* BUTTON */
+.pricing-btn{
+  padding:14px 28px;
+  border:none;
+  border-radius:30px;
+  background:rgb(255, 60, 172);
+  color:#ffffff;
+  font-size:15px;
+  cursor:pointer;
+  transition:0.3s ease;
+}
+
+.pricing-btn:hover{
+  background:rgb(255, 60, 172);
+}
+
+/* POPULAR PLAN */
+.pricing-card.popular{
+  background:linear-gradient(135deg, rgb(255, 60, 172),rgb(237, 86, 172));
+  transform:scale(1.05);
+}
+
+.pricing-card.popular .pricing-features li{
+  border-color:rgba(255,255,255,0.2);
+  color:#f0f0f0;
+}
+
+.pricing-card.popular .pricing-btn{
+  background:#ffffff;
+  color:#111;
+}
+
+.badge{
+  position:absolute;
+  top:-14px;
+  left:50%;
+  transform:translateX(-50%);
+  background:rgb(235, 178, 73);
+  color:#000;
+  font-size:12px;
+  padding:6px 14px;
+  border-radius:20px;
+  font-weight:600;
+}
+
+/* HOVER */
+.pricing-card:hover{
+  transform:translateY(-10px);
+  box-shadow:0 25px 50px rgba(0,0,0,0.4);
+}
+@media (max-width:768px){
+
+  .pricing-section{
+    padding:80px 20px;
+  }
+
+  .pricing-header h2{
+    font-size:28px;
+  }
+
+  .pricing-header p{
+    font-size:15px;
+  }
+
+  .pricing-cards{
+    grid-template-columns:1fr;
+    gap:25px;
+  }
+
+  .pricing-card.popular{
+    transform:none;
+  }
+
+  .price{
+    font-size:28px;
+  }
+}
 
 
 
@@ -733,6 +979,32 @@ nav ul li a{
 .footer-links a:hover{
   color:#ff3cac;
 }
+
+.contact-list{
+  list-style:none;
+  padding:0;
+  margin:0;
+}
+
+.contact-list li{
+  display:flex;
+  align-items:flex-start;
+  gap:10px;
+  font-size:14px;
+  color:#ccc;
+  margin-bottom:12px;
+}
+
+.contact-list a{
+  color:#ccc;
+  text-decoration:none;
+}
+
+.contact-list a:hover{
+  color:rgb(255, 60, 172);
+}
+
+
 @media (max-width:768px){
 
   .footer{
